@@ -14,9 +14,7 @@ interface IState {
 /**
  * The parent element of the react app.
  * It renders title, button and Graph react element.
- */interface PerspectiveViewerElement extends HTMLElements {
-  load: (table :Table)=> void,
-}
+ */
 class App extends Component<{}, IState> {
   constructor(props: {}) {
     super(props);
