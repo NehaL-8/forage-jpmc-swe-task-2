@@ -49,6 +49,16 @@ class Graph extends Component<IProps, {}> {
 
       // Add more Perspective configurations here.
       elem.load(this.table);
+      elem.setattribute('view','y_line');
+      elem.setAttrubute('column-pivots',["stocks"]');
+      elem.setAttrubute('row-pivot', '["timestamp"]');
+      elem.setAttrubute('columns','{"tops_ask_price"]');
+      elem.setAttrubute('aggregates',
+                        {"stock":distinct count",
+                         "top_ask_price":"avg",
+                         "top_bid_price":"avg",
+                         "timestamp":"distinct count"}'};
+                         
     }
   }
 
